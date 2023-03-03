@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Notes on LeetCode Problems</title>
+</head>
+<body>
+<h1><a href="https://leetcode.com/problems/word-ladder-ii/">World Ladder II</a></h1>
+<p> I tried a DFS that got all possible paths and then chose the shortest one.
+    Did not pass the time limit test. Next steps will be to try BFS which I think is more suited.
+    Second time, I tried DFS. This time it relies on a while loop and at each iteration of the while loop,
+    we only test chains that have the same length. This avoids looking for longer paths once paths of length k
+    have been found. Unfortunately, even this was not fast enough.
+    My third idea is to try a DFS again but from both ends : from the left, extending beginWord and from
+    the right extending endWord. And at each time testing if we can "stick" chains together.
+</p>
+
+</body>
+</html>
